@@ -207,6 +207,9 @@ svg.fill { fill: currentColor; stroke: none; }
 .pub-title a { color: var(--heading); }
 .pub-title a:hover { color: var(--orange-dark); }
 .pub-meta { font-size: 13.5px; margin: 0; color: var(--text); }
+.pub-meta a { font-weight: 600; }
+.pub-award { display: inline-flex; align-items: center; gap: 6px; font: 700 12px/1 var(--font-body); color: #9a4f0b; background: var(--peach); border-radius: 999px; padding: 6px 11px; margin: 0 0 8px; }
+.pub-award svg { width: 15px; height: 15px; color: var(--orange-dark); }
 @media (max-width: 520px) { .pubs li { grid-template-columns: 1fr; gap: 2px; } }
 
 /* Team */

@@ -31,7 +31,7 @@ stats:
   - value: "6"
     icon: lines
     label: {en: "R&D lines", pt: "Linhas de I&D"}
-  - value: "9"
+  - value: auto-publications   # counted from publications.yml · contado a partir de publications.yml
     icon: papers
     label: {en: "Scientific publications", pt: "Publicações científicas"}
 

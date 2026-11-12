@@ -1,5 +1,14 @@
 # Publications · Publicações (newest first · mais recentes primeiro)
 # Titles are kept in their original language · Os títulos ficam na língua original.
+# Optional · Opcional:  award: {en, pt}   url_label: {en, pt} (when the link is not the paper itself)
+
+- year: 2026
+  authors: Palheira H, Rodrigues D, Pais M, Gaspar J, Oliveira M, Correia S, Correia R
+  title: A GenAI Training Programme Enabling Healthcare Professionals to Prototype Clinical Software
+  venue: EFMI Special Topic Conference 2026, Athens, 30 October 2026
+  award: {en: "EFMI Best Student Paper Prize", pt: "Best Student Paper Prize da EFMI"}
+  url: https://www.ciencia-letras.pt/wp-content/uploads/2026/11/EFMI-STC-2026-slides-ciencia-e-letras-1.pdf
+  url_label: {en: "Slides (PDF)", pt: "Diapositivos (PDF)"}
 
 - year: 2025
   authors: Canelas-Pais M, Coutinho Almeida J, Magalhães Araujo S, Maia Rafael F, Cruz-Correia R, Pereira Rodrigues P
