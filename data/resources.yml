@@ -13,6 +13,7 @@
 #   licence:     e.g. CC BY 4.0
 #   url:         link to the file, repository or page
 #   updated:     YYYY-MM-DD
+#   doi:         optional · opcional, e.g. 10.5281/zenodo.1234567
 #
 # Example · Exemplo (remove the # to use · retire o # para usar):
 #
@@ -43,3 +44,4 @@
   licence: MIT (code) · CC BY 4.0 (data)
   url: https://ciencia-letras.github.io/ips-timeline/
   updated: 2026-11-12
+  doi: 10.5281/zenodo.24168811

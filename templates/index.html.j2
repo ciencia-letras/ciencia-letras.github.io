@@ -138,6 +138,7 @@
             {% if r.language %}<li title="{{ t.res_language|L }}">{{ r.language }}</li>{% endif %}
             {% if r.licence %}<li title="{{ t.res_licence|L }}">{{ r.licence }}</li>{% endif %}
             {% if r.updated %}<li title="{{ t.res_updated|L }}">{{ r.updated|fmtdate }}</li>{% endif %}
+            {% if r.doi %}<li class="chip-doi"><a href="https://doi.org/{{ r.doi }}" title="DOI"><b>DOI</b> {{ r.doi }}</a></li>{% endif %}
           </ul>
           <a class="btn btn-orange btn-sm" href="{{ r.url }}">{{ t.res_open|L }} {{ icon('arrow') }}</a>
         </article>
@@ -212,6 +213,7 @@
             <li class="chip-strong">{{ t.results_maturity|L }}: {{ t.maturity[a.maturity]|L }}</li>
             {% if a.licence %}<li>{{ a.licence }}</li>{% endif %}
             {% if a.updated %}<li>{{ a.updated|fmtdate }}</li>{% endif %}
+            {% if a.doi %}<li class="chip-doi"><a href="https://doi.org/{{ a.doi }}" title="DOI"><b>DOI</b> {{ a.doi }}</a></li>{% endif %}
           </ul>
           <a class="link" href="{{ a.url }}">{{ a.url|replace('https://', '') }} {{ icon('external') }}</a>
         </article>

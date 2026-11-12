@@ -240,3 +240,7 @@ svg.fill { fill: currentColor; stroke: none; }
   html { scroll-behavior: auto; }
   .btn { transition: none; }
 }
+.chips .chip-doi { padding: 0; background: none; }
+.chips .chip-doi a { display: inline-flex; border-radius: 999px; overflow: hidden; font-size: 12px; text-decoration: none; background: #e8f3fa; color: #0a5c8c; padding: 4px 10px 4px 0; }
+.chips .chip-doi b { background: #0a7bbc; color: #fff; padding: 0 8px; margin: -4px 8px -4px 0; display: inline-flex; align-items: center; }
+.chips .chip-doi a:hover { background: #d6ebf7; }
