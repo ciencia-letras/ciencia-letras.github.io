@@ -1,0 +1,357 @@
+{% set t = site.t %}
+{% macro icon(name) -%}
+{%- if name == 'years' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+{%- elif name == 'cert' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg>
+{%- elif name == 'lines' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.7.7 1 1.5 1 2.5h6c0-1 .3-1.8 1-2.5A6 6 0 0 0 12 3Z"/></svg>
+{%- elif name == 'papers' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4M10 12h5M10 16h5"/></svg>
+{%- elif name == 'mail' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+{%- elif name == 'phone' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+{%- elif name == 'pin' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+{%- elif name == 'github' -%}<svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+{%- elif name == 'arrow' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+{%- elif name == 'external' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg>
+{%- elif name == 'box' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></svg>
+{%- elif name == 'award' -%}<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 4h8v5a4 4 0 0 1-8 0zM8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4M12 13v4M8 21h8M9 17h6"/></svg>
+{%- endif -%}
+{%- endmacro %}
+{% macro divider() -%}
+<div class="divider" aria-hidden="true"><span></span><img src="/static/img/cel-logo-cores-icon.svg" alt=""><span></span></div>
+{%- endmacro %}
+<!doctype html>
+<html lang="{{ t.html_lang|L }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ t.meta_title|L }}</title>
+<meta name="description" content="{{ t.meta_description|L }}">
+<meta name="color-scheme" content="light">
+<link rel="canonical" href="{{ site.base_url }}{{ path }}">
+{% for l in site.languages %}
+<link rel="alternate" hreflang="{{ l.code }}" href="{{ site.base_url }}{{ l.path }}">
+{% endfor %}
+<link rel="alternate" hreflang="x-default" href="{{ site.base_url }}/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{{ t.meta_title|L }}">
+<meta property="og:description" content="{{ t.meta_description|L }}">
+<meta property="og:url" content="{{ site.base_url }}{{ path }}">
+<meta property="og:image" content="{{ site.base_url }}/static/img/cel-share.png">
+<meta property="og:locale" content="{{ 'en_GB' if lang == 'en' else 'pt_PT' }}">
+<link rel="icon" href="/static/img/cel-logo-cores-icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<a class="skip" href="#main">{{ t.skip|L }}</a>
+
+<div class="topbar">
+  <div class="wrap topbar-inner">
+    <a href="mailto:{{ site.contact.email }}">{{ icon('mail') }}<span>{{ site.contact.email }}</span></a>
+    <a href="tel:{{ site.contact.phone|replace(' ', '') }}" class="hide-sm">{{ icon('phone') }}<span>{{ site.contact.phone }}</span></a>
+    <span class="hide-md">{{ icon('pin') }}<span>UPTEC Asprela I, Porto</span></span>
+    <a href="{{ site.github_org }}" class="topbar-gh" aria-label="GitHub">{{ icon('github') }}</a>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap header-inner">
+    <a href="{{ path }}" class="brand"><img src="/static/img/cel-logo-cores-horizontal.svg" alt="Ciência e Letras" width="150" height="40"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#resources">{{ t.nav_resources|L }}</a>
+      <a href="#rd">{{ t.nav_rd|L }}</a>
+      <a href="#results">{{ t.nav_results|L }}</a>
+      <a href="#publications">{{ t.nav_publications|L }}</a>
+      <a href="#team">{{ t.nav_team|L }}</a>
+      <a href="#contact">{{ t.nav_contact|L }}</a>
+    </nav>
+    <div class="lang" role="group" aria-label="{{ t.lang_switch|L }}">
+      {% for l in site.languages %}
+      <a href="{{ l.path }}" hreflang="{{ l.code }}" lang="{{ l.code }}"{% if l.code == lang %} aria-current="page"{% endif %}>{{ l.label }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-pattern" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow eyebrow-light">{{ t.hero_eyebrow|L }}</p>
+      <h1>{{ t.hero_title|L }}</h1>
+      <p class="hero-lead">{{ t.hero_lead|L }}</p>
+      <div class="hero-cta">
+        <a href="#resources" class="btn btn-orange">{{ t.hero_cta_resources|L }}</a>
+        <a href="#rd" class="btn btn-ghost">{{ t.hero_cta_rd|L }}</a>
+      </div>
+    </div>
+    <svg class="hero-curve" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80h1440V20C1100 70 380 70 0 0z"/></svg>
+  </section>
+
+  <div class="wrap stats">
+    {% for s in site.stats %}
+    <div class="stat">
+      <span class="stat-icon {{ 'navy' if loop.index is odd else 'orange' }}">{{ icon(s.icon) }}</span>
+      <span><strong>{{ s.value }}</strong><small>{{ s.label|L }}</small></span>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Teaching resources -->
+  <section id="resources" class="section">
+    <div class="wrap">
+      <p class="eyebrow">{{ t.res_eyebrow|L }}</p>
+      <h2>{{ t.res_title|L }}</h2>
+      {{ divider() }}
+      <p class="intro">{{ t.res_intro|L }}</p>
+
+      {% if resources %}
+      {% set used_types = resources|map(attribute='type')|unique|list %}
+      <div class="filters" data-filters>
+        <div class="filter-group" role="group" aria-label="{{ t.res_filter_area|L }}">
+          <span class="filter-label">{{ t.res_filter_area|L }}</span>
+          <button type="button" data-filter="area" data-value="*" aria-pressed="true">{{ t.res_filter_all|L }}</button>
+          {% for key, label in t.area.items() %}
+          <button type="button" data-filter="area" data-value="{{ key }}" aria-pressed="false">{{ label|L }}</button>
+          {% endfor %}
+        </div>
+        <div class="filter-group" role="group" aria-label="{{ t.res_filter_type|L }}">
+          <span class="filter-label">{{ t.res_filter_type|L }}</span>
+          <button type="button" data-filter="type" data-value="*" aria-pressed="true">{{ t.res_filter_all|L }}</button>
+          {% for key in used_types %}
+          <button type="button" data-filter="type" data-value="{{ key }}" aria-pressed="false">{{ t.type[key]|L }}</button>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="grid grid-3" data-items>
+        {% for r in resources %}
+        <article class="card card-res" data-area="{{ r.area }}" data-type="{{ r.type }}">
+          <p class="card-label">{{ t.type[r.type]|L }} · {{ t.area[r.area]|L }}</p>
+          <h3>{{ r.title|L }}</h3>
+          <p>{{ r.description|L }}</p>
+          {% if r.courses %}
+          <p class="meta"><span>{{ t.res_used_in|L }}:</span>
+            {% for c in r.courses %}<a href="{{ courses_by_id[c].url }}">{{ courses_by_id[c].title|L }}</a>{% if not loop.last %}, {% endif %}{% endfor %}
+          </p>
+          {% endif %}
+          <ul class="chips">
+            {% if r.language %}<li title="{{ t.res_language|L }}">{{ r.language }}</li>{% endif %}
+            {% if r.licence %}<li title="{{ t.res_licence|L }}">{{ r.licence }}</li>{% endif %}
+            {% if r.updated %}<li title="{{ t.res_updated|L }}">{{ r.updated|fmtdate }}</li>{% endif %}
+          </ul>
+          <a class="btn btn-orange btn-sm" href="{{ r.url }}">{{ t.res_open|L }} {{ icon('arrow') }}</a>
+        </article>
+        {% endfor %}
+      </div>
+      <p class="empty-filter" data-empty hidden>{{ t.res_none_match|L }}</p>
+      {% else %}
+      <div class="empty">
+        <span class="stat-icon orange">{{ icon('box') }}</span>
+        <div>
+          <h3>{{ t.res_empty_title|L }}</h3>
+          <p>{{ t.res_empty_text|L }}</p>
+          <a class="link" href="{{ site.github_org }}">github.com/ciencia-letras {{ icon('external') }}</a>
+        </div>
+      </div>
+      {% endif %}
+
+      <h3 class="subhead">{{ t.courses_title|L }}</h3>
+      {% if t.courses_note|L %}<p class="note">{{ t.courses_note|L }}</p>{% endif %}
+      <div class="courses">
+        {% for key, label in t.area.items() %}
+        <div class="card card-courses">
+          <p class="card-label">{{ label|L }}</p>
+          <ul>
+            {% for c in courses if c.area == key %}
+            <li><a href="{{ c.url }}">{{ c.title|L }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- R&D lines -->
+  <section id="rd" class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">{{ t.rd_eyebrow|L }}</p>
+      <h2>{{ t.rd_title|L }}</h2>
+      {{ divider() }}
+      <p class="intro">{{ t.rd_intro|L }}</p>
+      <div class="grid grid-3">
+        {% for l in lines %}
+        <article class="card card-line">
+          <div class="line-head">
+            <p class="card-label">{{ t.rd_line|L }} {{ l.id }}</p>
+            <span class="status status-{{ l.status }}">{{ t['status_' ~ l.status]|L }}</span>
+          </div>
+          <h3>{{ l.title|L }}</h3>
+          <p>{{ l.text|L }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="results" class="section">
+    <div class="wrap">
+      <p class="eyebrow">{{ t.results_eyebrow|L }}</p>
+      <h2>{{ t.results_title|L }}</h2>
+      {{ divider() }}
+      <p class="intro">{{ t.results_intro|L }}</p>
+      {% if artifacts %}
+      <div class="grid grid-2">
+        {% for a in artifacts %}
+        <article class="card card-feature">
+          <p class="card-label">{{ t.type[a.type]|L }} · {{ t.results_line|L }} {{ a.line }}</p>
+          <h3>{{ a.title|L }}</h3>
+          <p>{{ a.description|L }}</p>
+          <ul class="chips">
+            <li class="chip-strong">{{ t.results_maturity|L }}: {{ t.maturity[a.maturity]|L }}</li>
+            {% if a.licence %}<li>{{ a.licence }}</li>{% endif %}
+            {% if a.updated %}<li>{{ a.updated|fmtdate }}</li>{% endif %}
+          </ul>
+          <a class="link" href="{{ a.url }}">{{ a.url|replace('https://', '') }} {{ icon('external') }}</a>
+        </article>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="empty">
+        <span class="stat-icon navy">{{ icon('box') }}</span>
+        <div>
+          <h3>{{ t.results_empty_title|L }}</h3>
+          <p>{{ t.results_empty_text|L }}</p>
+        </div>
+      </div>
+      {% endif %}
+
+      <h3 class="subhead">{{ t.news_title|L }}</h3>
+      {% if t.news_note|L %}<p class="note">{{ t.news_note|L }}</p>{% endif %}
+      <ul class="news">
+        {% for n in news %}
+        <li{% if n.highlight %} class="news-highlight"{% endif %}>
+          <time datetime="{{ n.date }}">{{ n.date|fmtdate }}</time>
+          <a href="{{ n.url }}">{% if n.highlight %}<span class="news-icon">{{ icon('award') }}</span>{% endif %}{{ n.title|L }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section id="publications" class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">{{ t.pubs_eyebrow|L }}</p>
+      <h2>{{ t.pubs_title|L }}</h2>
+      {{ divider() }}
+      <p class="intro">{{ t.pubs_intro|L }}</p>
+      <ol class="pubs">
+        {% for p in publications %}
+        <li>
+          <span class="pub-year">{{ p.year }}</span>
+          <div>
+            <p class="pub-title">{% if p.url %}<a href="{{ p.url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</p>
+            <p class="pub-meta">{{ p.authors }}. <em>{{ p.venue }}</em></p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="section">
+    <div class="wrap">
+      <p class="eyebrow">{{ t.team_eyebrow|L }}</p>
+      <h2>{{ t.team_title|L }}</h2>
+      {{ divider() }}
+      <div class="grid grid-team">
+        {% for m in team %}
+        <article class="person">
+          <span class="avatar {{ 'navy' if loop.index is odd else 'orange' }}" aria-hidden="true">{{ m.name|initials }}</span>
+          <div>
+            <h3>{{ m.name }}</h3>
+            <p>{{ m.role|L }}</p>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="section section-alt">
+    <div class="wrap">
+      <p class="eyebrow">{{ t.partners_eyebrow|L }}</p>
+      <h2>{{ t.partners_title|L }}</h2>
+      {{ divider() }}
+      <div class="grid grid-2">
+        {% for p in partners %}
+        <article class="card card-feature">
+          <h3><a href="{{ p.url }}">{{ p.name }}</a></h3>
+          <p>{{ p.text|L }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="cta">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>{{ t.contact_title|L }}</h2>
+        <p>{{ t.contact_text|L }}</p>
+      </div>
+      <a class="btn btn-orange" href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <img src="/static/img/cel-logo-branco-horizontal.svg" alt="Ciência e Letras" width="160" height="43">
+      <p><strong>{{ site.contact.legal_name }}</strong><br>{{ site.contact.address }}</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>
+      <li><a href="tel:{{ site.contact.phone|replace(' ', '') }}">{{ site.contact.phone }}</a></li>
+      <li><a href="{{ site.main_site }}">{{ t.footer_site|L }}</a></li>
+      <li><a href="{{ site.rd_page }}">{{ t.footer_rd_page|L }}</a></li>
+      <li><a href="{{ site.github_org }}">{{ t.footer_github|L }}</a></li>
+      <li><a href="{{ site.github_org }}/ciencia-letras.github.io">{{ t.footer_edit|L }}</a></li>
+    </ul>
+  </div>
+  <div class="wrap footer-bottom">© {{ build_date.year }} Ciência e Letras</div>
+</footer>
+
+{% if resources %}
+<script>
+(() => {
+  const root = document.querySelector('[data-filters]');
+  if (!root) return;
+  const state = { area: '*', type: '*' };
+  const items = [...document.querySelectorAll('[data-items] > [data-area]')];
+  const empty = document.querySelector('[data-empty]');
+  root.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-filter]');
+    if (!b) return;
+    state[b.dataset.filter] = b.dataset.value;
+    root.querySelectorAll(`button[data-filter="${b.dataset.filter}"]`)
+      .forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    let shown = 0;
+    items.forEach((it) => {
+      const ok = (state.area === '*' || it.dataset.area === state.area) &&
+                 (state.type === '*' || it.dataset.type === state.type);
+      it.hidden = !ok; if (ok) shown++;
+    });
+    empty.hidden = shown > 0;
+  });
+})();
+</script>
+{% endif %}
+</body>
+</html>

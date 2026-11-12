@@ -1,0 +1,144 @@
+# Interface text and global settings · Textos da interface e definições gerais
+# Every text has an English (en) and a Portuguese (pt) version. English first.
+# Cada texto tem versão em inglês (en) e em português (pt). Inglês primeiro.
+
+base_url: https://ciencia-letras.github.io
+github_org: https://github.com/ciencia-letras
+main_site: https://www.ciencia-letras.pt
+rd_page: https://www.ciencia-letras.pt/investigacao-e-inovacao-em-formacao/
+
+contact:
+  legal_name: Ciência e Letras — Formação Especializada, Lda.
+  address: UPTEC Asprela I, Rua Alfredo Allen, 455/461, 4200-135 Porto, Portugal
+  phone: "+351 963 817 407"
+  email: secretaria@ciencia-letras.pt
+
+languages:
+  - code: en
+    label: EN
+    path: /
+  - code: pt
+    label: PT
+    path: /pt/
+
+stats:
+  - value: "30"
+    icon: years
+    label: {en: "Years of experience", pt: "Anos de experiência"}
+  - value: "DGERT"
+    icon: cert
+    label: {en: "Certified training provider", pt: "Entidade formadora certificada"}
+  - value: "6"
+    icon: lines
+    label: {en: "R&D lines", pt: "Linhas de I&D"}
+  - value: "9"
+    icon: papers
+    label: {en: "Scientific publications", pt: "Publicações científicas"}
+
+t:
+  html_lang: {en: en, pt: pt-PT}
+  meta_title: {en: "Ciência e Letras — Research & Innovation", pt: "Ciência e Letras — Investigação e Inovação"}
+  meta_description:
+    en: "Open teaching resources and public R&D results from Ciência e Letras (CeL), a DGERT-certified training provider in Porto working on Health IT and applied artificial intelligence."
+    pt: "Recursos pedagógicos abertos e resultados públicos de I&D do Ciência e Letras (CeL), entidade formadora certificada pela DGERT, no Porto, dedicada a Health IT e inteligência artificial aplicada."
+  skip: {en: "Skip to content", pt: "Saltar para o conteúdo"}
+  nav_resources: {en: "Resources", pt: "Recursos"}
+  nav_rd: {en: "R&D", pt: "I&D"}
+  nav_results: {en: "Results", pt: "Resultados"}
+  nav_publications: {en: "Publications", pt: "Publicações"}
+  nav_team: {en: "Team", pt: "Equipa"}
+  nav_contact: {en: "Contact", pt: "Contacto"}
+  lang_switch: {en: "Language", pt: "Idioma"}
+
+  hero_eyebrow: {en: "Ciência e Letras · Research & Innovation", pt: "Ciência e Letras · Investigação e Inovação"}
+  hero_title: {en: "Research and innovation in training", pt: "Investigação e inovação em formação"}
+  hero_lead:
+    en: "The teaching resources we use in our courses and the public results of our research on how to teach and apply artificial intelligence in health and professional training."
+    pt: "Os recursos pedagógicos que usamos nos nossos cursos e os resultados públicos da nossa investigação sobre como ensinar e aplicar inteligência artificial na saúde e na formação profissional."
+  hero_cta_resources: {en: "Teaching resources", pt: "Recursos pedagógicos"}
+  hero_cta_rd: {en: "Our R&D", pt: "A nossa I&D"}
+
+  res_eyebrow: {en: "In the classroom", pt: "Na sala de formação"}
+  res_title: {en: "Teaching resources", pt: "Recursos pedagógicos"}
+  res_intro:
+    en: "Slides, guides, exercises and tools we use in our courses. We publish them here once they are ready to be reused by other trainers, teachers and learners."
+    pt: "Diapositivos, guias, exercícios e ferramentas que usamos nos nossos cursos. Publicamo-los aqui quando estão prontos para serem reutilizados por outros formadores, docentes e formandos."
+  res_filter_all: {en: "All", pt: "Todos"}
+  res_filter_area: {en: "Area", pt: "Área"}
+  res_filter_type: {en: "Type", pt: "Tipo"}
+  res_open: {en: "Open", pt: "Abrir"}
+  res_used_in: {en: "Used in", pt: "Usado em"}
+  res_language: {en: "Language", pt: "Idioma"}
+  res_licence: {en: "Licence", pt: "Licença"}
+  res_updated: {en: "Updated", pt: "Atualizado"}
+  res_none_match: {en: "No resources match these filters.", pt: "Nenhum recurso corresponde a estes filtros."}
+  res_empty_title: {en: "First resources on the way", pt: "Primeiros recursos a caminho"}
+  res_empty_text:
+    en: "We are preparing the first materials from our courses for open publication. Follow the GitHub organisation to be notified."
+    pt: "Estamos a preparar os primeiros materiais dos nossos cursos para publicação aberta. Siga a organização no GitHub para ser notificado."
+  courses_title: {en: "Courses where we use them", pt: "Cursos onde os usamos"}
+  courses_note: {en: "Courses are currently taught in Portuguese.", pt: ""}
+
+  rd_eyebrow: {en: "Research & Development", pt: "Investigação & Desenvolvimento"}
+  rd_title: {en: "What we are working on", pt: "Em que estamos a trabalhar"}
+  rd_intro:
+    en: "Six lines of work connect our research with what happens in the classroom. Each one feeds new courses, new teaching methods or software components we test in our own training first."
+    pt: "Seis linhas de trabalho ligam a nossa investigação ao que acontece na sala de formação. Cada uma dá origem a novos cursos, novos métodos de ensino ou componentes de software que testamos primeiro na nossa própria formação."
+  rd_line: {en: "Line", pt: "Linha"}
+  status_active: {en: "Active", pt: "Em curso"}
+  status_development: {en: "In development", pt: "Em desenvolvimento"}
+  status_planned: {en: "Planned", pt: "Planeada"}
+
+  results_eyebrow: {en: "Open results", pt: "Resultados abertos"}
+  results_title: {en: "Artefacts ready to share", pt: "Artefactos prontos a partilhar"}
+  results_intro:
+    en: "Tools, code, datasets and studies from our R&D that are mature enough to be used outside our courses."
+    pt: "Ferramentas, código, conjuntos de dados e estudos da nossa I&D com maturidade suficiente para serem usados fora dos nossos cursos."
+  results_maturity: {en: "Maturity", pt: "Maturidade"}
+  results_line: {en: "R&D line", pt: "Linha de I&D"}
+  results_empty_title: {en: "Being prepared for release", pt: "Em preparação para publicação"}
+  results_empty_text:
+    en: "The first artefacts from lines 03 and 04 are being tested in our courses. They will appear here once they are stable and documented."
+    pt: "Os primeiros artefactos das linhas 03 e 04 estão a ser testados nos nossos cursos. Vão aparecer aqui quando estiverem estáveis e documentados."
+  news_title: {en: "Recent news", pt: "Notícias recentes"}
+  news_note: {en: "Articles in Portuguese.", pt: ""}
+  read_more: {en: "Read", pt: "Ler"}
+
+  pubs_eyebrow: {en: "Scientific output", pt: "Produção científica"}
+  pubs_title: {en: "Publications", pt: "Publicações"}
+  pubs_intro:
+    en: "Peer-reviewed work by our team on teaching AI, health informatics education and digital health."
+    pt: "Trabalhos com revisão por pares da nossa equipa sobre ensino da IA, formação em informática em saúde e saúde digital."
+
+  team_eyebrow: {en: "Researchers and trainers", pt: "Investigadores e formadores"}
+  team_title: {en: "The team behind our R&D", pt: "A equipa que sustenta a nossa I&D"}
+
+  partners_eyebrow: {en: "R&D in collaboration", pt: "I&D em colaboração"}
+  partners_title: {en: "Technology partners", pt: "Parceiros tecnológicos"}
+
+  contact_title: {en: "Get in touch", pt: "Fale connosco"}
+  contact_text:
+    en: "Want to reuse a resource, collaborate on a study or bring one of these approaches to your organisation? Write to us."
+    pt: "Quer reutilizar um recurso, colaborar num estudo ou levar uma destas abordagens para a sua organização? Escreva-nos."
+  footer_site: {en: "Main website", pt: "Site principal"}
+  footer_rd_page: {en: "R&D page (Portuguese)", pt: "Página de I&D"}
+  footer_github: {en: "GitHub organisation", pt: "Organização no GitHub"}
+  footer_edit: {en: "Suggest a change", pt: "Sugerir uma alteração"}
+
+  type:
+    slides: {en: "Slides", pt: "Diapositivos"}
+    guide: {en: "Guide", pt: "Guia"}
+    exercise: {en: "Exercise", pt: "Exercício"}
+    dataset: {en: "Dataset", pt: "Dados"}
+    tool: {en: "Tool", pt: "Ferramenta"}
+    template: {en: "Template", pt: "Modelo"}
+    video: {en: "Video", pt: "Vídeo"}
+    code: {en: "Code", pt: "Código"}
+    study: {en: "Study", pt: "Estudo"}
+  area:
+    health-it: {en: "Health IT", pt: "IT na Saúde"}
+    ai: {en: "Artificial Intelligence", pt: "Inteligência Artificial"}
+  maturity:
+    pilot: {en: "Pilot", pt: "Piloto"}
+    stable: {en: "Stable", pt: "Estável"}
+    published: {en: "Published", pt: "Publicado"}

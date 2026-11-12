@@ -1,0 +1,34 @@
+# Courses · Cursos (ids are used in resources.yml · os ids são usados em resources.yml)
+
+- id: hl7v2
+  area: health-it
+  title: {en: "HL7 v2.x — Health Interoperability", pt: "HL7 v2.x — Interoperabilidade em Saúde"}
+  url: https://www.ciencia-letras.pt/cursos/cursos-hl7v2/
+- id: hl7-fhir
+  area: health-it
+  title: {en: "HL7 FHIR — Health Interoperability", pt: "HL7 FHIR — Interoperabilidade em Saúde"}
+  url: https://www.ciencia-letras.pt/cursos/hl7-fhir/
+- id: genai-farmaceuticos
+  area: health-it
+  title: {en: "GenAI for Pharmacists", pt: "GenAI para Farmacêuticos"}
+  url: https://www.ciencia-letras.pt/cursos/genai-farmaceuticos/
+- id: genai-medicos
+  area: health-it
+  title: {en: "GenAI for Physicians", pt: "GenAI para Médicos"}
+  url: https://www.ciencia-letras.pt/cursos/genai-medicos/
+- id: genai-enfermeiros
+  area: health-it
+  title: {en: "GenAI for Nurses", pt: "GenAI para Enfermeiros"}
+  url: https://www.ciencia-letras.pt/cursos/genai-para-enfermeiros/
+- id: genai-saude-avancado
+  area: health-it
+  title: {en: "GenAI for Health Professionals — Advanced", pt: "GenAI para Profissionais de Saúde — Avançado"}
+  url: https://www.ciencia-letras.pt/cursos/genai-saude-avancado/
+- id: iniciacao-chatgpt
+  area: ai
+  title: {en: "Getting Started with ChatGPT and AI", pt: "Iniciação ao ChatGPT e IA"}
+  url: https://www.ciencia-letras.pt/cursos/iniciacao-chatgpt-ia/
+- id: genai-informaticos
+  area: ai
+  title: {en: "GenAI for IT Professionals", pt: "GenAI para Informáticos"}
+  url: https://www.ciencia-letras.pt/cursos/genai-para-informaticos/

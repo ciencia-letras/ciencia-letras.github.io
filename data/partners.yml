@@ -1,0 +1,12 @@
+# Technology partners · Parceiros tecnológicos
+
+- name: VirtualCare
+  url: https://www.virtualcare.pt
+  text:
+    en: AI-agent tutoring and teaching support, AI integration in Moodle, assessment support, and literacy and communication components.
+    pt: Componentes de tutoria e acompanhamento pedagógico com agentes de IA, integração de IA em Moodle, apoio à avaliação e componentes de literacia e comunicação.
+- name: PharmaDataHub (PDH)
+  url: https://www.pharmadatahub.com/
+  text:
+    en: AI agents for health literacy and communication with patients, extending our work beyond professional training.
+    pt: Agentes de IA para literacia em saúde e comunicação com utentes, alargando o nosso trabalho para além da formação profissional.

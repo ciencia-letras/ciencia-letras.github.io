@@ -1,0 +1,56 @@
+# R&D lines · Linhas de I&D
+# status: active | development | planned
+
+- id: "01"
+  status: active
+  title:
+    en: Teaching Artificial Intelligence
+    pt: Ensino da Inteligência Artificial
+  text:
+    en: We research and develop methods for teaching generative AI in a practical, critical and responsible way. The focus is not only on using tools, but on understanding their limits, risks, potential and professional uses.
+    pt: Investigamos e desenvolvemos metodologias para ensinar IA generativa de forma prática, crítica e responsável. O foco não está apenas no uso de ferramentas, mas na compreensão dos seus limites, riscos, potencialidades e aplicações profissionais.
+
+- id: "02"
+  status: active
+  title:
+    en: Sector-specific applied AI courses
+    pt: Cursos setoriais de IA aplicada
+  text:
+    en: We design training for specific sectors, including healthcare, tourism, the plastics industry, higher education and organisations going through digital transformation. Each course starts from the real needs of professionals and institutions.
+    pt: Criamos produtos formativos ajustados a setores específicos, incluindo saúde, turismo, indústria dos plásticos, ensino superior e organizações em transformação digital. Cada curso é desenhado com base em necessidades reais dos profissionais e das instituições.
+
+- id: "03"
+  status: development
+  title:
+    en: AI agents to support learners
+    pt: Agentes de IA para acompanhamento da formação
+  text:
+    en: We are developing teaching support models based on AI agents to help learners, trainers and coordinators throughout a course — answering questions, following participation, spotting difficulties early and personalising the learning experience.
+    pt: Estamos a desenvolver modelos de acompanhamento pedagógico apoiados por agentes de IA, para apoiar formandos, formadores e coordenação ao longo do ciclo formativo — resposta a dúvidas, acompanhamento da participação, identificação precoce de dificuldades e personalização da aprendizagem.
+
+- id: "04"
+  status: development
+  title:
+    en: AI-augmented Moodle
+    pt: Moodle aumentado por IA
+  text:
+    en: With our technology partners we are building Moodle components for intelligent tutoring, AI-assisted feedback, assessment support, automated follow-up and course coordination. They are tested first in CeL courses and may later be offered to partners who use Moodle.
+    pt: Com os nossos parceiros tecnológicos estamos a desenvolver componentes para Moodle de tutoria inteligente, feedback assistido por IA, apoio à avaliação, acompanhamento automatizado e coordenação pedagógica. São testados primeiro nos cursos do CeL e poderão depois ser disponibilizados a parceiros que usem Moodle.
+
+- id: "05"
+  status: active
+  title:
+    en: Automating teaching and quality processes
+    pt: Automação dos processos pedagógicos e de qualidade
+  text:
+    en: We are exploring AI and agents to support needs assessment, course organisation, tutoring, assessment, analysis of results and continuous improvement, while meeting the quality requirements of certified training.
+    pt: Estamos a explorar a utilização de IA e de agentes para apoiar o diagnóstico de necessidades, a organização de cursos, a tutoria, a avaliação, a análise de resultados e a melhoria contínua, respeitando os requisitos de qualidade da formação certificada.
+
+- id: "06"
+  status: active
+  title:
+    en: Applied research and scientific dissemination
+    pt: Investigação aplicada e disseminação científica
+  text:
+    en: Our team carries out and takes part in research on teaching AI, digital health, health informatics, digital literacy and teaching innovation, linking research, training and professional practice.
+    pt: A equipa do CeL desenvolve e participa em trabalhos científicos sobre ensino da IA, saúde digital, informática em saúde, literacia digital e inovação pedagógica, reforçando a ligação entre investigação, formação e prática profissional.

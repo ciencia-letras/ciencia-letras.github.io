@@ -1,0 +1,31 @@
+# Public R&D artefacts · Artefactos públicos de I&D
+#
+# Only artefacts mature enough to be used outside our courses.
+# Apenas artefactos com maturidade para serem usados fora dos nossos cursos.
+#
+# Fields · Campos:
+#   title:       {en, pt}
+#   description: {en, pt}
+#   type:        tool | code | dataset | study | template
+#   line:        R&D line id from lines.yml, e.g. "03"
+#   maturity:    pilot | stable | published
+#   licence:     e.g. MIT, CC BY 4.0
+#   url:         link to the repository, paper or page
+#   updated:     YYYY-MM-DD
+#
+# Example · Exemplo:
+#
+# - title:
+#     en: Moodle tutoring agent
+#     pt: Agente de tutoria para Moodle
+#   description:
+#     en: Moodle plugin that answers learner questions using course materials.
+#     pt: Plugin Moodle que responde a dúvidas dos formandos com base nos materiais do curso.
+#   type: code
+#   line: "04"
+#   maturity: pilot
+#   licence: GPL-3.0
+#   url: https://github.com/ciencia-letras/...
+#   updated: 2026-11-12
+
+[]

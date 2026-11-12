@@ -1,0 +1,33 @@
+# Teaching resources · Recursos pedagógicos
+#
+# Add one entry per resource. English first, then Portuguese.
+# Acrescente uma entrada por recurso. Inglês primeiro, depois português.
+#
+# Fields · Campos:
+#   title:       {en, pt}                 required · obrigatório
+#   description: {en, pt}                 required · obrigatório
+#   type:        slides | guide | exercise | dataset | tool | template | video | code
+#   area:        health-it | ai
+#   courses:     list of course ids from courses.yml · lista de ids de courses.yml
+#   language:    language of the material itself, e.g. PT, EN, PT/EN
+#   licence:     e.g. CC BY 4.0
+#   url:         link to the file, repository or page
+#   updated:     YYYY-MM-DD
+#
+# Example · Exemplo (remove the # to use · retire o # para usar):
+#
+# - title:
+#     en: Prompting basics for health professionals
+#     pt: Noções básicas de prompting para profissionais de saúde
+#   description:
+#     en: Slide deck used in the first session of the GenAI courses for health professionals.
+#     pt: Diapositivos usados na primeira sessão dos cursos de GenAI para profissionais de saúde.
+#   type: slides
+#   area: ai
+#   courses: [genai-medicos, genai-enfermeiros]
+#   language: PT
+#   licence: CC BY 4.0
+#   url: https://github.com/ciencia-letras/...
+#   updated: 2026-11-12
+
+[]
