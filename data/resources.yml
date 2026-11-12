@@ -30,4 +30,16 @@
 #   url: https://github.com/ciencia-letras/...
 #   updated: 2026-11-12
 
-[]
+- title:
+    en: "Virtual patients: from IPS to an interactive health timeline"
+    pt: "Pacientes virtuais: do IPS a uma linha do tempo de saúde interativa"
+  description:
+    en: Five fictitious patients stored as HL7 FHIR International Patient Summaries. Download each IPS, read it as a human-readable summary and explore a timeline generated from it by explicit rules. An example of what participants build with generative AI.
+    pt: Cinco pacientes fictícios guardados como International Patient Summaries em HL7 FHIR. Descarregue cada IPS, leia-o como resumo legível e explore uma timeline gerada a partir dele por regras explícitas. Um exemplo do que os formandos criam com IA generativa.
+  type: tool
+  area: ai
+  courses: [genai-saude-avancado]
+  language: PT/EN
+  licence: MIT (code) · CC BY 4.0 (data)
+  url: https://ricardojccorreia.github.io/ips-timeline/
+  updated: 2026-11-12
