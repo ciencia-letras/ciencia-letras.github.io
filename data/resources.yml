@@ -45,3 +45,17 @@
   url: https://ciencia-letras.github.io/ips-timeline/
   updated: 2026-11-12
   doi: 10.5281/zenodo.24168811
+
+- title:
+    en: "My AI project in 7 phases: a practical simulation kit for generative AI"
+    pt: "O meu projeto IA em 7 fases: kit de simulação prática com IA generativa"
+  description:
+    en: "One conversation with an AI assistant takes a workplace initiative from first idea to dissemination, in seven phases. Each phase has a technique, a prompt to fill in, an iteration and a checklist. A teaching resource of the Ciência e Letras generative AI courses."
+    pt: "Uma conversa com um assistente de IA leva uma iniciativa de trabalho da primeira ideia à divulgação, em sete fases. Cada fase tem uma técnica, um prompt para preencher, uma iteração e uma checklist. Um recurso pedagógico dos cursos de IA generativa do Ciência e Letras."
+  type: template
+  area: ai
+  courses: [iniciacao-chatgpt, genai-informaticos]
+  language: PT/EN
+  licence: CC BY 4.0
+  url: https://ciencia-letras.github.io/kit-projeto-ia/
+  updated: 2026-11-12
